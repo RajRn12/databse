@@ -3,11 +3,12 @@ import { Pressable, StyleSheet, Text } from 'react-native';
 import styles from '../styles/master-style-sheet';
 
 
-export default Item = ({ itemId, itemText }) => {
+export default Item = ({ itemId, itemText, onPress, onLongPress }) => {
 
     return (
         <Pressable
-            onPress={() => { }}
+            onPress={onPress}
+            onLongPress={onLongPress}
             style={[styles.itemStyle,]}
             key={itemId}
         >
