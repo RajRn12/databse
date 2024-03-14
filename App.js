@@ -15,9 +15,6 @@ import Constants from 'expo-constants';
 import Item from './components/item';
 import styles from './styles/master-style-sheet';
 
-
-
-
 export default function App() {
     const [db, setDb] = useState(null);
     const [text, setText] = useState(null);
